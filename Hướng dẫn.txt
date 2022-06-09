@@ -1,0 +1,9 @@
+Bước 1: Cài Arduino IDE từ file arduino-1.8.16-windows.zip trong thư mục thư viện của Arduino
+Bước 2: Include thư viện cho arduino và cài driver ESP8266 cho arduino
+Bước 3: Nối mạch cho arduino theo sơ đồ trong file SoDo.jpg
+Bước 4: Tiến hành nạp code cho arduino từ file heart_rate.ino
+Bước 5: Thiết lập wifi cho thiết bị
+Bước 6: Cài nodeJS nếu máy chưa cài 
+Bước 7: Tạo database bằng MySQL
+Bước 8:	Build server api nodeJs trong thư mục Server
+Bước 9: Đặt tay vào cảm biến vào tiến hành đo nhịp tim và nồng độ oxy trong máu 

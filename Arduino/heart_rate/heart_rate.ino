@@ -190,7 +190,7 @@ void loop()
       
       HTTPClient http;   
  
-     http.begin(wifiClient,"http://192.168.43.217:3000/products");   
+     http.begin(wifiClient,"http://192.168.43.217:3000/data");   
      http.addHeader("Content-Type", "application/json");  
    
        
@@ -251,8 +251,10 @@ void loop()
       //delay(100);
       //Deactivate the buzzer to have the effect of a "bip"
       //We sensed a beat!
-      
-      int httpCode = http.POST("{\"hr\": "+(String)beatAvg+",\"oxi\":"+(String)oxi+"}");   
+      //ESP933041
+     // String mtb = "ESP933041";
+      //String idbn = "select max(id) from benhnhan";
+      int httpCode = http.POST("{\"mathietbi\": \"ESP933041\",\"hr\": "+(String)beatAvg+",\"oxi\":"+(String)oxi+",\"id_benhnhan\":\"select max(id) from benhnhan\"}");   
      String payload = http.getString();                  
    
      Serial.println("httpCode: " + httpCode);   
